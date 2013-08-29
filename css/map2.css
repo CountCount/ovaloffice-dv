@@ -1,0 +1,270 @@
+#map2 {
+	position:relative;
+	border:none;
+	float: left;
+	background: rgba(255,204,204,.3);
+}
+#info {
+	float: right;
+	position: relative;
+}
+
+.map_zones {
+	padding:2px 0 0 2px;
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:0;
+}
+#map2 .map_zone {
+	text-align:center;
+	font-size:0.75em;
+	border:none;
+	margin:0 1px 1px 0;
+	height:32px;
+	width:32px;
+	float:left;
+	position: absolute;
+}
+.map_zone .map_zone_info {
+	display: none;
+	background: transparent;
+	color: #000;
+	position: absolute;
+	width: 250px;
+	height: 150px;
+}
+.map_zone:hover .map_zone_info {
+	/*display: block;*/
+}
+.map_zone .overlay_border {
+	background: #fff;
+	opacity: 0.7;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	width: 250px;
+	height: 150px;
+}
+.map_zone .map_zone_info .content {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 224px;
+	height: 124px;
+	background: #cce;
+	padding: 6px;
+	text-align: left;
+	opacity: 0.9;
+	border: 1px solid #666;
+}
+
+.map_fields {
+	position:absolute;
+	z-index:1;
+	top:0;
+	left:0;
+}
+#map2 .map_field {
+	text-align:center;
+	font-size:0.75em;
+	border:1px solid #ccc;
+	height:30px;
+	width:30px;
+	float:left;
+	position: absolute;
+}
+.map_field.ownfield {
+	border-color: #f0c;
+}
+
+.map_buildings {
+	position:absolute;
+	z-index:30;
+	top:0;
+	left:0;
+}
+#map2 .map_building {
+	border:1px solid #ccf;
+	height:30px;
+	width:30px;
+	position: absolute;
+}
+
+.map_zombies {
+	position:absolute;
+	z-index:3;
+	top:0;
+	left:0;
+}
+#map_zombies_today, #map_zombies_count {
+	opacity: 0;
+}
+#map2 .map_zombie {
+	border:none;
+	height:30px;
+	width:30px;
+	position: absolute;
+}
+
+.map_citizens {
+	position:absolute;
+	z-index:5;
+	top:0;
+	left:0;
+	opacity: 0;
+}
+.map_citidots {
+	position:absolute;
+	z-index:90;
+	top:0;
+	left:0;
+	opacity: 1;
+}
+#map2 .map_citizen, #map2 .map_citidot, #map2 .map_searching {
+	border:none;
+	height:30px;
+	width:30px;
+	position: absolute;
+}
+#map_zombies_count {
+	z-index: 91;
+}
+#map_zombies_count p.zc {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #f00;
+	background: rgba(0,0,0,.5);
+	padding: 0 1px 1px;
+	line-height: 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.map_visits, .map_tags {
+	position:absolute;
+	z-index:32;
+	top:0;
+	left:0;
+}
+#map2 .map_visit, #map2 .map_tag {
+	text-align:center;
+	font-size:0.75em;
+	border:none;
+	height:32px;
+	width:32px;
+	float:left;
+	background: transparent;
+	position: absolute;
+}
+
+.map_tags {
+	z-index: 35;
+	opacity: 0;
+}
+.map_tag img{
+	margin: 3px auto 0;
+	padding: 1px;
+	background: rgba(255, 255, 153, .5);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	
+}
+.map_visit.nyv {
+	background: transparent url('img/nyv4.png') center center no-repeat;
+}
+.map_visit.nvt {
+	background: transparent url('img/nvt4.png') center center no-repeat;
+}
+.map_visit.rdr {
+	background: transparent url('img/rdr.png') center center no-repeat;
+}
+.map_maptools {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+}
+#map2 .map_direction, #map2 .map_direction_color{
+	text-align:center;
+	font-size:0.75em;
+	border:none;
+	height:32px;
+	width:32px;
+	float:left;
+	opacity: 0.7;
+	position: absolute;
+}
+#map2 .map_direction_border {
+	text-align:center;
+	font-size:0.75em;
+	border:none;
+	height:33px;
+	width:33px;
+	float:left;
+	opacity: 1;
+	position: absolute;
+}
+.map_direction_border.dbL {
+	border-left: 3px solid #ff0;
+}
+.map_direction_border.dbB {
+	border-bottom: 3px solid #c0f;
+}
+.map_direction_border.dbT {
+	border-top: 3px solid #ff0;
+}
+
+#map2 .map_watchtower {
+	text-align:center;
+	font-size:0.75em;
+	border:none;
+	height:32px;
+	width:32px;
+	float:left;
+	opacity: 0.7;
+	position: absolute;
+}
+
+.map_expeditions {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 50;
+}
+#map2 .map_expedition {
+	position:absolute;
+	color:#fff;
+	text-align:center;
+	font-size:0.75em;
+	font-weight: bold;
+	border:1px solid #fff;
+	height:16px;
+	width:16px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	position: absolute;
+}
+
+#map2 .map_building_icon {
+	background: #fff;
+	opacity: 0.7;
+	width: 12px;
+	height: 12px;
+	margin: 9px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+#map2 .map_building_icon.city {
+	background: transparent url('img/town.png') no-repeat 50% 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0px;	
+}
